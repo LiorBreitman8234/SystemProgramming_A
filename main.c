@@ -14,7 +14,7 @@ int main(){
         num1 = num2;
         num2 = temp;
     }
-    
+    printf("The Prime numbers are: ");
     for(int i = num1; i <= num2; i++)
     {
         int checkPrime = isPrime(i);
@@ -23,7 +23,7 @@ int main(){
             printf("%d ", i);
         }
     }
-    printf("finished prime \n");
+    printf("\n The Armstrong numbers are: ");
     for(int i = num1; i <= num2; i++)
     {
         int checkArmStrong = isArmstrong(i);
@@ -32,7 +32,7 @@ int main(){
             printf("%d ", i);
         }
     }
-    printf("finished armstrong \n");
+    printf("\n The Strong numbers are: ");
     for(int i = num1; i <= num2; i++)
     {
         int checkStrong = isStrong(i);
@@ -41,8 +41,7 @@ int main(){
             printf("%d ", i);
         }
     }
-    printf("finished strong\n");
-    
+    printf("\n The Palindrome numbers are: ");
     for(int i = num1; i <= num2; i++)
     {
         int checkPalindrome = isPalindrome(i);
@@ -51,6 +50,6 @@ int main(){
             printf("%d ", i);
         }
     }
-    printf("finished palindrome\n");
+    printf("\n");
     return 0;
 }

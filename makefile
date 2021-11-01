@@ -7,11 +7,14 @@ MATH = -lm
 
 clean: 
 	rm -f *.o *.a *.so $(PROGS_CMD)
-all: $(LIBS_CMD) $(PROGS_CMD) main.o $(OBJ_RECURSION) advancedClassificationLoop.o
+
+all: $(LIBS_CMD) $(PROGS_CMD) 
+
 loops: libclassloops.a
+loopd: libclassloops.so
 recursives: libclassrec.a
 recursived: libclassrec.so
-loopd: libclassloops.so
+
 
 mains: main.o libclassrec.a
 	gcc $(CFLAGS) -o mains main.o libclassrec.a -lm

@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <math.h>
-#define FALSE 0
-#define TRUE 1
+#include "NumClass.h"
 
+/* help function to check the length of the number */
 int lengthOfNumber(int num);
+
+/* function to reverse the number */
 int reverse(int num);
 
 int isArmstrong(int num){
     int length = lengthOfNumber(num);
     int testFinal = num;
     int sum =0;
+
+    /* loop on all the digits and use power to the length on them, then add to the sum */
     for(int i =0; i < length;i++)
     {
         int digit = num%10;
         num = num/10;
         sum += pow(digit,length);
     }
+
     if(sum == testFinal)
     {
         return TRUE;
@@ -27,6 +32,9 @@ int isArmstrong(int num){
 int reverse(int num){
     int newNum =0;
     int length = lengthOfNumber(num);
+
+    /* to reverse the number loop on the length and very time take the singels digit 
+        and multiply with ten to the power of the position it needs to be in the reversed numebr */
     for(int i =0; i <length;i++)
     {
         int digit = num%10;
@@ -46,7 +54,6 @@ int isPalindrome(int num){
     
     if(num == reverseNum)
     {
-        //printf("num: %d, reversed: %d  \n",num, reverseNum);
         return TRUE;
     }
     return FALSE;

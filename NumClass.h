@@ -20,6 +20,3 @@ int isPalindrome(int num);
     the sum of the factorial of each digit is the numebr itself*/
 
 int isStrong(int num);
-
-/*reverse num*/
-int reverse(int num);

@@ -11,29 +11,11 @@ int main(){
         num1 = num2;
         num2 = temp;
     }
-    printf("The Prime numbers are:");
-    for(int i = num1; i <= num2; i++)
-    {
-        int checkPrime = isPrime(i);
-        if(checkPrime)
-        {
-            printf(" %d", i);
-        }
-    }
-    printf("\nThe Armstrong numbers are:");
+    printf("The Armstrong numbers are:");
     for(int i = num1; i <= num2; i++)
     {
         int checkArmStrong = isArmstrong(i);
         if(checkArmStrong)
-        {
-            printf(" %d", i);
-        }
-    }
-    printf("\nThe Strong numbers are:");
-    for(int i = num1; i <= num2; i++)
-    {
-        int checkStrong = isStrong(i);
-        if(checkStrong)
         {
             printf(" %d", i);
         }
@@ -47,6 +29,25 @@ int main(){
             printf(" %d", i);
         }
     }
+    printf("\nThe Prime numbers are:");
+    for(int i = num1; i <= num2; i++)
+    {
+        int checkPrime = isPrime(i);
+        if(checkPrime)
+        {
+            printf(" %d", i);
+        }
+    }
+    printf("\nThe Strong numbers are:");
+    for(int i = num1; i <= num2; i++)
+    {
+        int checkStrong = isStrong(i);
+        if(checkStrong)
+        {
+            printf(" %d", i);
+        }
+    }
+
 
     return 0;
 }

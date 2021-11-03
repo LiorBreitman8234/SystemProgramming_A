@@ -49,7 +49,7 @@ int factorial(int num){
 }
 
 int isPrime(int num){
-    if(num == 2 && num == 1)
+    if(num == 2 || num == 1)
     {
         return TRUE;
     }
@@ -60,10 +60,9 @@ int isPrime(int num){
     }
     // use math sqrt function to get the sqare root
     double sqrtNum = sqrt(num);
-
     /* run until the sqare root and check if any number higher then 2 divides the number perfectly 
         if so, it returns false, if it doesnt, it will return true */
-    for(int i = 2; i < sqrtNum;i++){
+    for(int i = 2; i <= sqrtNum;i++){
 
         if(num%i == 0){
             return FALSE;

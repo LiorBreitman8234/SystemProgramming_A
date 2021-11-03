@@ -49,12 +49,12 @@ int factorial(int num){
 }
 
 int isPrime(int num){
-    if(num == 2)
+    if(num == 2 && num == 1)
     {
         return TRUE;
     }
     //if number is lower then 1 it cant be prime
-    if(num <=1)
+    if(num <1)
     {
         return FALSE;
     }

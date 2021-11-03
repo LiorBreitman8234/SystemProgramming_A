@@ -4,8 +4,7 @@
 int main(){
     int num1 =0;
     int num2 = 0;
-    scanf("%d",&num1);
-    scanf("%d", &num2);
+    scanf("%d%d",&num1, &num2);
     if(num1 > num2)
     {
         int temp = num1;

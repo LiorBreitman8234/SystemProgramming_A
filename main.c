@@ -20,7 +20,7 @@ int main(){
             printf(" %d", i);
         }
     }
-    printf("\nThe Palindrome numbers are:");
+    printf("\nThe Palindromes are:");
     for(int i = num1; i <= num2; i++)
     {
         int checkPalindrome = isPalindrome(i);
@@ -47,6 +47,8 @@ int main(){
             printf(" %d", i);
         }
     }
+    printf("\n");
+
 
 
     return 0;
